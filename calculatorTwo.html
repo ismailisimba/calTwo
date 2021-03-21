@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="This site is home to Ismaili's creative portfolio and other cool stuff.">
+    
+    
+
+   <link href="./style.css" type="text/css" rel="stylesheet">
+   
+    
+   <title>Ismizo - Calculator Two</title>
+
+  </head>
+  <body>
+    
+<div class="so_basic" id="containerbig">
+  <div id="logo"></div>
+  <div id="title">Mortgage Calculator</div>
+
+
+  <div id="pickFunc">
+    <label for="tax-select">Choose a tax:</label>
+
+<select name="taxes" id="tax-select">
+    <option value="pls">--Please choose an option--</option>
+    <option value="vat"> Exclusive VAT</option>
+    <option value="inclvat">Inclusive VAT</option>
+    <option value="paye">PAYE</option>
+    <option value="pension">Pension</option>
+    <option value="citylev">City Service Levy</option>
+    <option value="sdl">SDL</option>
+    <option value="corporate">Corporate Tax</option>
+</select>
+
+  </div>
+  <div id="pickAmou">
+
+    <label for="amount-select">Enter the amount</label>
+
+    <input type="text" id="amount-select" name="amount-select" required
+    minlength="4" maxlength="18" >
+    <button id="calcuAct">Calculate</button>
+    
+  </div>
+  <div id="answer">
+    
+  </div>
+  <div id="reset">
+
+    <button>Reset</button>
+    
+  </div>
+
+    
+</div>
+
+<script src="./script.js"></script>
+
+  </body>
+</html>

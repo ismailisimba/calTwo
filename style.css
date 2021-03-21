@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.so_basic{
+
+    display: block;
+    min-width: 350px;
+    max-width: 600px;
+    min-height: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 6px 6px;
+
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: "Roboto", serif;
+
+    background-color: #29235c;
+    color: white;
+    box-sizing: border-box;
+}
+
+#logo{
+  
+
+    width: 90px;
+    min-height: 50px;
+    height: fit-content;
+    margin: 6px 12px;
+
+
+    
+
+   /* background-image: url("https://ismizo.com/resources/layout_pics/favicon.png");*/
+    background-position: center;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+ 
+
+    box-sizing: border-box;
+}
+
+#title{
+
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+
+}
+
+#pickFunc, #pickAmou{
+
+    margin: 9px auto;
+
+    display: flex;
+    flex-flow: column;
+
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+label{
+    padding-bottom: 3px;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    
+
+    padding: 3px 6px;
+    
+    
+    font-size: 18px;
+    
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+
+    box-shadow: 1px 1px 5px 0.2px black;
+
+    margin-top: 6px;
+    margin-bottom: 3px;
+
+}
+
+button:hover, button::selection {
+  box-shadow: none;
+
+}
+
+input{
+    text-align: center;
+}
+
+#answer {
+
+    width: 85%;
+    min-height: 100px;
+
+    text-align: center;
+    cursor: text;
+
+    background-color: white;
+    color: black;
+}
+
+#reset{
+    visibility: hidden;
+}
+
