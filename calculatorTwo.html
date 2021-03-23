@@ -17,40 +17,31 @@
     
 <div class="so_basic" id="containerbig">
   <div id="logo"></div>
-  <div id="title">Mortgage Calculator</div>
+  <div id="title">Equated Monthly Installment (EMI) Calculator</div>
 
 
   <div id="pickFunc">
-    <label for="tax-select">Choose a tax:</label>
+<div class="items_test1">
+  <label for="cal21">Enter Total  Mortgage Amount/Loan</label>
+  <textarea name="cal21" id="cal21" cols="30" rows="10"></textarea>
+</div>
+<div class="items_test1">
+  <label for="cal22">Enter Interest Rate ( Yearly Rate )</label>
+  <textarea name="cal22" id="cal22" cols="30" rows="10"></textarea>
+</div>
+<div class="items_test1">
+  <label for="cal23">Enter Total Mortage Years / Tenor</label>
+  <textarea name="cal23" id="cal23" cols="30" rows="10"></textarea>
+</div>
 
-<select name="taxes" id="tax-select">
-    <option value="pls">--Please choose an option--</option>
-    <option value="vat"> Exclusive VAT</option>
-    <option value="inclvat">Inclusive VAT</option>
-    <option value="paye">PAYE</option>
-    <option value="pension">Pension</option>
-    <option value="citylev">City Service Levy</option>
-    <option value="sdl">SDL</option>
-    <option value="corporate">Corporate Tax</option>
-</select>
 
   </div>
-  <div id="pickAmou">
-
-    <label for="amount-select">Enter the amount</label>
-
-    <input type="text" id="amount-select" name="amount-select" required
-    minlength="4" maxlength="18" >
-    <button id="calcuAct">Calculate</button>
-    
-  </div>
+  <div class="emi">EMI Value</div>
   <div id="answer">
     
   </div>
   <div id="reset">
-
-    <button>Reset</button>
-    
+    <button id="calcuAct">Calculate</button>
   </div>
 
     
