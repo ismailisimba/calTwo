@@ -19,10 +19,27 @@
 
     font-family: "Roboto", serif;
 
-    background-color: #5d5d5d;
+    background-color: transparent;
+    
     color: black;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
+}
+
+.items_test1, label{
+    width: 96%;
+}
+
+#pickFunc{
+    width: 100%;
+}
+
+.so_basic{
+    border: 0.69px dotted black;
+    padding-bottom: 24px;
+    padding-top: 19px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 #logo{
@@ -50,7 +67,7 @@
 textarea {
 
     margin-top: 15px;
-
+    width: 96%;
     min-width: 250px;
     height: 35px;
     overflow: hidden;
@@ -59,8 +76,8 @@ textarea {
     margin-bottom: 3px;
     box-sizing: border-box;
 
-    font-family: "Quicksand";
-    font-size: 12px;
+    font-family: "Roboto" !important;
+    font-size: 16px;
 }
 
 #title{
@@ -70,7 +87,7 @@ textarea {
     letter-spacing: 3px;
     margin-bottom: 36px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -80,6 +97,10 @@ label, .emi{
     padding-bottom: 6px;
     font-weight: bold;
     letter-spacing: 1.69px;
+}
+.emi{
+    margin-top: 36px;
+    width: 85%;
 }
 
 button {
@@ -109,17 +130,22 @@ button:hover, button::selection {
 }
 
 input, #cal21, textarea{
-    text-align: center;
+    text-align: left;
     padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #answer {
 
     width: 85%;
     min-height: 100px;
-
-    text-align: center;
+    border: 0.69px dotted black;
+    text-align: left;
     cursor: text;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
 
     background-color: white;
     color: black;
