@@ -10,17 +10,12 @@ function myMainFunc () {
 
  function inputFormat (e) {
 
-   // document.getElementById("answer").innerHTML = e.target.value;
    let tempArr = e.target.value.match(/\d/g);
- //  console.log(tempArr);
    let tempString = tempArr.toString();
    tempString = tempString.replaceAll(",","");
    actualNums = tempString;
    inputNums = tempString.match(/(\d+?)(?=(\d{3})+(?!\d)|$)/g);
-
    e.target.value = inputNums;
-   
-  // document.getElementById("answer").innerHTML = inputNums;
    inputNums = [];
    
  }
@@ -31,10 +26,6 @@ async  function performCalc() {
    let total = actualNums;
    let years = document.getElementById("cal23").value;
    let inte = document.getElementById("cal22").value;
-
-   console.log(total);
-   console.log(years);
-   console.log(inte);
 
    let data = {};
    data["loanTot"] = total;
@@ -62,8 +53,12 @@ async  function performCalc() {
   taxValue =parseFloat( taxValue.toPrecision(myL+2));
 
   let tempDiv = document.createElement("div");
-  
-  tempDiv.innerHTML = `<p>The EMI value is: ${taxValue} </p>`;
+  let numTemp = tempString.substring(0,myL);
+  taxValue = taxValue.toString();
+  let decNum = taxValue.substring(myL+1,taxValue.length);
+
+  let newNum = numTemp.match(/(\d+?)(?=(\d{3})+(?!\d)|$)/g);
+  tempDiv.innerHTML = `<p>The EMI value is Tshs. ${newNum}.${decNum} </p>`;
   
   document.getElementById("answer").innerHTML =  tempDiv.innerHTML;
  }
